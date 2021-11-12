@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Traveloid</string>
+    <string name="monserrate">Monserrate</string>
+    <string name="title_description">Description</string>
+    <string name="value_description">The Cerro de Monserrate is the best known of the eastern hills of Bogotá. The hills of Bogotá are at least 16 million years old. The basilica of the Lord of Monserrate has been a place of religious pilgrimage since colonial times and is a natural, religious, and gastronomic attraction of the city.</string>
+    <string name="value_weather">18°C</string>
+    <string name="value_elevation">3152 MASL </string>
+    <string name="title_elevation">Elevation</string>
+    <string name="title_history">History</string>
+    <string name="value_history"> Values for defects</string>
+    <string name="title_restaurants">Restaurants</string>
+    <string name="value_restaurants">Value for defects</string>
+</resources>

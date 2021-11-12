@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Traveloid</string>
+    <string name="monserrate">Monserrate</string>
+    <string name="title_description">Descripción</string>
+    <string name="value_description">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Los cerros de Bogotá tienen por lo menos 16 millones de años de antigüedad. La basílica del Señor de Monserrate ha sido lugar de peregrinación religiosa desde la época colonial y se constituye en un atractivo natural, religioso, gastronómico de la ciudad.</string>
+    <string name="value_weather">18°C</string>
+    <string name="value_elevation">3152 MSNM </string>
+    <string name="title_elevation">Altura</string>
+    <string name="title_history">Historia</string>
+    <string name="value_history"> Valor por defecto</string>
+    <string name="title_restaurants">Restaurantes</string>
+    <string name="value_restaurants">Valor por defecto</string>
 </resources>
