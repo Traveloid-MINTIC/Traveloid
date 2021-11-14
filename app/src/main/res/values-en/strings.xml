@@ -10,5 +10,8 @@
     <string name="title_history">History</string>
     <string name="value_history"> Values for defects</string>
     <string name="title_restaurants">Restaurants</string>
-    <string name="value_restaurants">Value for defects</string>
+    <string name="value_restaurant_1">Casa San Isidro Restaurant:</string>
+    <string name="value_description_restaurant_1">European gastronomy. Its outstanding cuisine delights with a varied European menu carefully designed, which is constantly reinvented with new trends offered by the gastronomic seasons throughout the year.</string>
+    <string name="value_restaurant_2">Casa Santa Clara Restaurant:</string>
+    <string name="value_description_restaurant_2">Typical Colombian gastronomy. The ideal setting to enchant yourself with the most emblematic flavors of Colombian cuisine, is this beautiful house built in 1924 in the town of Usaquén and moved in 1979 to its current location at the foot of the Hill at 3,200 meters high.</string>
 </resources>
