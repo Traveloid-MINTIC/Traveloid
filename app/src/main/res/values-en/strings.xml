@@ -8,10 +8,11 @@
     <string name="value_elevation">3152 MASL </string>
     <string name="title_elevation">Elevation</string>
     <string name="title_history">History</string>
-    <string name="value_history"> Values for defects</string>
+    <string name="value_history"> In 1620 the Fernández Valenzuela Family built the first chapels on the hill. Pedro Fernández built the chapel in homage to the Santa Cruz de Monserrate. The Sanctuary of Señor Caido de Monserrate has a Neolithic style, designed by Arturo Jaramillo and completed around 1925</string>
     <string name="title_restaurants">Restaurants</string>
     <string name="value_restaurant_1">Casa San Isidro Restaurant:</string>
     <string name="value_description_restaurant_1">European gastronomy. Its outstanding cuisine delights with a varied European menu carefully designed, which is constantly reinvented with new trends offered by the gastronomic seasons throughout the year.</string>
     <string name="value_restaurant_2">Casa Santa Clara Restaurant:</string>
     <string name="value_description_restaurant_2">Typical Colombian gastronomy. The ideal setting to enchant yourself with the most emblematic flavors of Colombian cuisine, is this beautiful house built in 1924 in the town of Usaquén and moved in 1979 to its current location at the foot of the Hill at 3,200 meters high.</string>
+    <string name="title_location">Location:</string>
 </resources>
