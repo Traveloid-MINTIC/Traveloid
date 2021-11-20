@@ -4,6 +4,7 @@
     <string name="monserrate">Monserrate</string>
     <string name="title_description">Description</string>
     <string name="value_description">The Cerro de Monserrate is the best known of the eastern hills of Bogotá. The hills of Bogotá are at least 16 million years old. The basilica of the Lord of Monserrate has been a place of religious pilgrimage since colonial times and is a natural, religious, and gastronomic attraction of the city.</string>
+    <string name="value_description_cardview">The Moserrate Hill...</string>
     <string name="value_weather">18°C</string>
     <string name="value_elevation">3152 MASL </string>
     <string name="title_elevation">Elevation</string>
@@ -14,5 +15,6 @@
     <string name="value_description_restaurant_1">European gastronomy. Its outstanding cuisine delights with a varied European menu carefully designed, which is constantly reinvented with new trends offered by the gastronomic seasons throughout the year.</string>
     <string name="value_restaurant_2">Casa Santa Clara Restaurant:</string>
     <string name="value_description_restaurant_2">Typical Colombian gastronomy. The ideal setting to enchant yourself with the most emblematic flavors of Colombian cuisine, is this beautiful house built in 1924 in the town of Usaquén and moved in 1979 to its current location at the foot of the Hill at 3,200 meters high.</string>
-    <string name="title_location">Location:</string>
+    <string name="title_location">Location</string>
+    <string name="value_calification">4.5 </string>
 </resources>
