@@ -6,3 +6,5 @@ Mi nombre es William Gutierrez soy ingeniero electornico me dedico a sistemas de
 Mi nombre es Lina Katherine Arias soy estudiante de ingeniería en automatización, tengo 25 años y soy de la ciudad de Bogotá.
 
 Mi nombre es Jessica Johana Arias soy Ingenierá Ambiental y Sanitaria , tengo 28 años y soy de la ciudad de Bogotá.
+
+Mi nombre es Juan Sebastian Sierra Morales soy Ingeniero en Mecatronica y hago parte del proyecto de Traveloid.
