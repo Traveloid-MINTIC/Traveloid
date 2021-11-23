@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
-class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPlace>
+class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPlaceItem>
     ) : RecyclerView.Adapter <TouristPlacesAdapter.ViewHolder>() {
 
     //Definir el Layoot
@@ -30,13 +31,13 @@ class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPla
         private var cardTextView: TextView = itemView.findViewById(R.id.card_text_view)
         private var ratingTextView: TextView = itemView.findViewById(R.id.rating_text_view)
         private var starImageView: ImageView = itemView.findViewById(R.id.star_image_view)
-        private var pictureImageView : ImageView = itemView.findViewById(R.id.picture_image_view)
-        fun bind (touristPlace: TouristPlace){
+        private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
+        fun bind (touristPlace: TouristPlaceItem){
             nameTextView.text = touristPlace.name
             cardTextView.text = touristPlace.descriptionCard
             ratingTextView.text =touristPlace.ratingStart
-            //Picture
-            //StartImage
+            Picasso.get().load(touristPlace.urlPicture).into(pictureImageView);
+            //Picture            //StartImage
 
         }
     }
