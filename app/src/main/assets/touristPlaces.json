@@ -62,7 +62,19 @@
         "location" : "Mapa",
         "urlPicture" : "https://s3.amazonaws.com/images-gaudiumpress-es/wp-content/uploads/2020/08/31151105/165533.jpg"
 
-    }
+    },
+    {
+        "name" : "Castillo Marroquín",
+        "elevation" : "2505 MSNM",
+        "weather" : " 17°C",
+        "ratingStart" : "5",
+        "description" : "El Castillo Marroquín es un Palacio construido en el año de 1898, ubicado en los predios de la Hacienda El Castillo en el sector de La Caro, Chía (Cundinamarca).",
+        "descriptionCard" : "A pocos minutos del centro de chia se encuentra este hermoso lugar con el que puedes compartir con familia y amigos",
+        "history" : "El Castillo fue diseñado por el arquitecto Gastón Lelarge en 1898. Finalizó su construcción en 1901.",
+        "restaurants" : "Restaurante andres carne de res, Restaurante el humero",
+        "location" : "Mapa",
+        "urlPicture" : "https://castillomarroquindotcom.files.wordpress.com/2018/06/cropped-castillo-frontal-2.jpg"
 
+    }
 ]
       

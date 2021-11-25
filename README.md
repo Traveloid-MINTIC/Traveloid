@@ -8,3 +8,5 @@ Mi nombre es Lina Katherine Arias soy estudiante de ingeniería en automatizaci�
 Mi nombre es Jessica Johana Arias soy Ingenierá Ambiental y Sanitaria , tengo 28 años y soy de la ciudad de Bogotá.
 
 Mi nombre es Juan Sebastian Sierra Morales soy Ingeniero en Mecatronica y hago parte del proyecto de Traveloid.
+
+Mi nombre eb Diego Armando Soy tecnologo de multimedia y soy parte del proyecto Traveloid.
