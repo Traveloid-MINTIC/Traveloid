@@ -1,11 +1,13 @@
-package com.traveloiddevs.traveloid
+package com.traveloiddevs.traveloid.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.traveloiddevs.traveloid.R
+import com.traveloiddevs.traveloid.model.TouristPlace
+import com.traveloiddevs.traveloid.model.TouristPlaceItem
 
 class ListTraveloidActivity : AppCompatActivity() {
     private lateinit var touristPlacesList: ArrayList<TouristPlaceItem>
@@ -22,7 +24,7 @@ class ListTraveloidActivity : AppCompatActivity() {
         touristPlacesList = loadMockTouristPlacesFromJson()
         touristPlacesAdapter = TouristPlacesAdapter(touristPlacesList)
 
-        touristPlacesRecyclerView.apply {
+        val apply = touristPlacesRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = touristPlacesAdapter
             setHasFixedSize(false)

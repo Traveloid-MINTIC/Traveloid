@@ -1,4 +1,4 @@
-package com.traveloiddevs.traveloid
+package com.traveloiddevs.traveloid.model
 
 
 import com.google.gson.annotations.SerializedName

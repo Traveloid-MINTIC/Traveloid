@@ -1,4 +1,4 @@
-package com.traveloiddevs.traveloid
+package com.traveloiddevs.traveloid.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
+import com.traveloiddevs.traveloid.R
+import com.traveloiddevs.traveloid.model.TouristPlaceItem
 
 class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPlaceItem>
     ) : RecyclerView.Adapter <TouristPlacesAdapter.ViewHolder>() {
