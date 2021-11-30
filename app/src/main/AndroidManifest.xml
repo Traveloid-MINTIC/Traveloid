@@ -11,15 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Traveloid">
-        <activity
-            android:name=".detail.prurba"
-            android:exported="false" />
-        <activity
-            android:name=".register.Prueba"
-            android:exported="false" />
-        <activity
-            android:name=".list.pryebaactivity"
-            android:exported="false" />
+
         <activity
             android:name=".register.RegisterTouristPlaceActivity"
             android:exported="false" />

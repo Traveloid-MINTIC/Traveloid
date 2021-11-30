@@ -3,6 +3,7 @@ package com.traveloiddevs.traveloid.list
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +11,12 @@ import com.squareup.picasso.Picasso
 import com.traveloiddevs.traveloid.R
 import com.traveloiddevs.traveloid.model.TouristPlaceItem
 
-class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPlaceItem>
+class TouristPlacesAdapter(
+    /*Para seleccionar algo de manera sostenida
+    private val onItemLongClicked: (TouristPlaceItem)-> Unit,*/
+    private val touristPlacesList : ArrayList <TouristPlaceItem>,
+    private val onItemClicked:(TouristPlaceItem)-> Unit
+
     ) : RecyclerView.Adapter <TouristPlacesAdapter.ViewHolder>() {
 
     //Definir el Layoot
@@ -21,6 +27,10 @@ class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPla
     //Trae los datos de la vista
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val touristPlace = touristPlacesList [position]
+        //Busca la posicón del sistio turistico a elegir
+        holder.itemView.setOnClickListener {onItemClicked(touristPlacesList[position])}
+        /*holder.itemView.setOnLongClickListener { onItemLongClicked(touristPlacesList[position]) true}*/
+
         holder.bind(touristPlace)
 
     }
@@ -32,7 +42,7 @@ class TouristPlacesAdapter(private val touristPlacesList : ArrayList <TouristPla
         private var nameTextView: TextView = itemView.findViewById(R.id.name_text_view)
         private var cardTextView: TextView = itemView.findViewById(R.id.card_text_view)
         private var ratingTextView: TextView = itemView.findViewById(R.id.rating_text_view)
-        private var starImageView: ImageView = itemView.findViewById(R.id.star_image_view)
+        //private var starImageView: ImageView = itemView.findViewById(R.id.star_image_view)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
         fun bind (touristPlace: TouristPlaceItem){
             nameTextView.text = touristPlace.name

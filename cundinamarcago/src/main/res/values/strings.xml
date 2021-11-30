@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Traveloid</string>
+    <string name="monserrate">Monserrate</string>
+    <string name="title_description">Descripción</string>
+    <string name="value_description">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Los cerros de Bogotá tienen por lo menos 16 millones de años de antigüedad. La basílica del Señor de Monserrate ha sido lugar de peregrinación religiosa desde la época colonial y se constituye en un atractivo natural, religioso, gastronómico de la ciudad.</string>
+    <string name="value_description_cardview">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá reconocido por la fe de su Santuario, sus jardines y fuentes, su gastronomía, sus bosques de niebla, sus atardeceres, y noches estrelladas.</string>
+    <string name="value_weather">18°C</string>
+    <string name="value_elevation">3152 MSNM </string>
+    <string name="title_elevation">Altitud</string>
+    <string name="title_history">Historia</string>
+    <string name="value_history"> Hacia el año 1620 la Familia Fernández Valenzuela construyó las primeras ermitas en el cerro. Fué Pedro Fernández quién edificó la capilla en homenaje a la Santa Cruz de Monserrate. El Santuario del Señor Caído de Monserrate con un estilo neolítico fue diseñado  por Arturo Jaramillo y terminado alrededor del año 1925</string>
+    <string name="title_restaurant">Restaurantes</string>
+    <string name="value_restaurant">Restaurante Casa San Isidro(Gastronomia Europea) y Restaurante Casa Santa Clara (Gastronomia Colombiana) </string>
+    <string name="title_location">Localización</string>
+    <string name="value_rating">4.5 </string>
+    <string name="title_rating">Puntuación</string>
+    <string name="label_scale_rating">/5.0</string>
+    <string name="value_location">Coordenadas</string>
+
+    <!-- Sync Preferences -->
+    <string name="notifications">Notificaciones</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
