@@ -6,14 +6,14 @@
     <string name="value_description_cardview">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá reconocido por la fe de su Santuario, sus jardines y fuentes, su gastronomía, sus bosques de niebla, sus atardeceres, y noches estrelladas.</string>
     <string name="value_weather">18°C</string>
     <string name="value_elevation">3152 MSNM </string>
-    <string name="title_elevation">Altura</string>
+    <string name="title_elevation">Altitud</string>
     <string name="title_history">Historia</string>
     <string name="value_history"> Hacia el año 1620 la Familia Fernández Valenzuela construyó las primeras ermitas en el cerro. Fué Pedro Fernández quién edificó la capilla en homenaje a la Santa Cruz de Monserrate. El Santuario del Señor Caído de Monserrate con un estilo neolítico fue diseñado  por Arturo Jaramillo y terminado alrededor del año 1925</string>
-    <string name="title_restaurants">Restaurantes</string>
-    <string name="value_restaurant_1">Restaurante Casa San Isidro:</string>
-    <string name="value_description_restaurant_1">Gastronomía europea. Su destacada cocina deleita con un variado menú europeo cuidadosamente diseñado, que se reinventa constantemente con nuevas tendencias que ofrecen las temporadas gastronómicas a lo largo del año.</string>
-    <string name="value_restaurant_2">Restaurante Casa Santa Clara:</string>
-    <string name="value_description_restaurant_2">Gastronomía típica colombiana . El escenario ideal para encantarse con los más emblemáticos sabores de la cocina colombiana, es esta hermosa casa construida en 1924 en el pueblo de Usaquén y trasladada en 1979 a su actual ubicación en la falda del Cerro a 3.200 metros de altura git pull.</string>
-    <string name="title_location">Localización:</string>
-    <string name="value_calification">4.5 </string>
+    <string name="title_restaurant">Restaurantes</string>
+    <string name="value_restaurant">Restaurante Casa San Isidro(Gastronomia Europea) y Restaurante Casa Santa Clara (Gastronomia Colombiana) </string>
+    <string name="title_location">Localización</string>
+    <string name="value_rating">4.5 </string>
+    <string name="title_rating">Puntuación</string>
+    <string name="label_scale_rating">/5.0</string>
+    <string name="value_location">Coordenadas</string>
 </resources>

@@ -1,11 +1,14 @@
 package com.traveloiddevs.traveloid.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.traveloiddevs.traveloid.R
+import com.traveloiddevs.traveloid.detail.DetailActivity
 import com.traveloiddevs.traveloid.model.TouristPlace
 import com.traveloiddevs.traveloid.model.TouristPlaceItem
 
@@ -22,7 +25,7 @@ class ListTraveloidActivity : AppCompatActivity() {
 
 //        touristPlacesList = createMockTouristPlaces()
         touristPlacesList = loadMockTouristPlacesFromJson()
-        touristPlacesAdapter = TouristPlacesAdapter(touristPlacesList)
+        touristPlacesAdapter = TouristPlacesAdapter(touristPlacesList, onItemClicked = {onTouristPlaceClicked(it)})
 
         val apply = touristPlacesRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -31,12 +34,19 @@ class ListTraveloidActivity : AppCompatActivity() {
         }
     }
 
+    private fun onTouristPlaceClicked(touristplace: TouristPlaceItem) {
+        Log.d("elevation",touristplace.elevation)
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra("touristPlace", touristplace)
+        startActivity(intent)
+
+    }
+
     private fun loadMockTouristPlacesFromJson(): ArrayList<TouristPlaceItem> {
         val TouristPlacesString: String = applicationContext.assets.open("touristPlaces.json").bufferedReader().use { it.readText() }
         val gson = Gson()
         val data = gson.fromJson(TouristPlacesString, TouristPlace::class.java )
         return data
-
     }
     /*
     private fun createMockTouristPlaces(): ArrayList<TouristPlace>{

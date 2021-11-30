@@ -2,6 +2,7 @@ package com.traveloiddevs.traveloid.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class TouristPlaceItem(
     @SerializedName("description")
@@ -24,4 +25,4 @@ data class TouristPlaceItem(
     val urlPicture: String,
     @SerializedName("weather")
     val weather: String
-)
+) : Serializable
