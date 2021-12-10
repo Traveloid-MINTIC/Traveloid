@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/navigation_list">
 
     <fragment
-        android:id="@+id/listFragment"
+        android:id="@+id/navigation_list"
         android:name="com.traveloiddevs.cundinamarcago.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/navigation_detail" />
         <action
             android:id="@+id/action_listFragment_to_settingsFragment2"
-            app:destination="@id/settingsFragment" />
+            app:destination="@id/navigation_preference" />
     </fragment>
     <fragment
-        android:id="@+id/detailFragment"
+        android:id="@+id/navigation_detail"
         android:name="com.traveloiddevs.cundinamarcago.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
@@ -27,7 +27,7 @@
             app:argType="com.traveloiddevs.cundinamarcago.model.TouristPlaceItem" />
     </fragment>
     <fragment
-        android:id="@+id/settingsFragment"
+        android:id="@+id/navigation_preference"
         android:name="com.traveloiddevs.cundinamarcago.preference.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>

@@ -37,8 +37,8 @@ class ListFragment : Fragment() {
         }
     }
     private fun onTouristPlaceClicked(touristPlace: TouristPlaceItem) {
-        //findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(touristPlace = touristPlace))
-        findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment2())
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(touristPlace = touristPlace))
+        //findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment2())
     }
     private fun loadMockTouristPlacesFromJson(): ArrayList<TouristPlaceItem> {
         val TouristPlacesString: String = context?.assets?.open("touristPlaces.json")?.bufferedReader().use { it!!.readText() }//TODO Reparar !!
