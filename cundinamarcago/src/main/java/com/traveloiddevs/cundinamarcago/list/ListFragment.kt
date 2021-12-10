@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.traveloiddevs.cundinamarcago.databinding.FragmentListBinding
+import com.traveloiddevs.cundinamarcago.main.MainActivity
 import com.traveloiddevs.cundinamarcago.model.TouristPlace
 import com.traveloiddevs.cundinamarcago.model.TouristPlaceItem
 
@@ -27,6 +28,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity?)?.hideIcon()
         touristPlacesList = loadMockTouristPlacesFromJson()
         touristPlacesAdapter = TouristPlacesAdapter(touristPlacesList, onItemClicked = {onTouristPlaceClicked(it)})
 
