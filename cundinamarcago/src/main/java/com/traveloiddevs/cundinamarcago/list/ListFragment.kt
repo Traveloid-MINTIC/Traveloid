@@ -28,7 +28,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity?)?.hideIcon()
+        // (activity as MainActivity?)?.hideIcon() No se usa en Drawer Activity
         touristPlacesList = loadMockTouristPlacesFromJson()
         touristPlacesAdapter = TouristPlacesAdapter(touristPlacesList, onItemClicked = {onTouristPlaceClicked(it)})
 

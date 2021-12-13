@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_list"
         android:name="com.traveloiddevs.cundinamarcago.list.ListFragment"
-        android:label="fragment_list"
+        android:label="@string/title_list"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/navigation_detail"
         android:name="com.traveloiddevs.cundinamarcago.detail.DetailFragment"
-        android:label="DetailFragment"
+        android:label="@string/title_detail"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="touristPlace"
@@ -29,5 +29,5 @@
     <fragment
         android:id="@+id/navigation_preference"
         android:name="com.traveloiddevs.cundinamarcago.preference.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="@string/title_preference" />
 </navigation>
