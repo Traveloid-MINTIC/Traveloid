@@ -37,6 +37,12 @@ class TouristPlacesAdapter(
     //Cuenta los datos de la lista
     override fun getItemCount(): Int = touristPlacesList.size
 
+    fun appendItems(newItems: ArrayList<TouristPlaceItem>) {
+        touristPlacesList.clear()
+        touristPlacesList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
     //Desarrolla cada view Holder
     class ViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
         private var nameTextView: TextView = itemView.findViewById(R.id.name_text_view)

@@ -5,18 +5,22 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import com.squareup.picasso.Picasso
 import com.traveloiddevs.cundinamarcago.databinding.FragmentDetailBinding
+import com.traveloiddevs.cundinamarcago.list.ListViewModel
 import com.traveloiddevs.cundinamarcago.main.MainActivity
 
 class DetailFragment : Fragment() {
     private lateinit var detailBinding: FragmentDetailBinding
+    private val detailViewModel: DetailViewModel by viewModels()
     private val args: DetailFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       // (activity as MainActivity?)?.showIcon()
+       (activity as MainActivity?)?.showIcon() // Drawer and tapped activity
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +28,7 @@ class DetailFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         detailBinding = FragmentDetailBinding.inflate(inflater, container, false)
-
+        //detailViewModel = ViewModelProvider(this)[detailViewModel::class.java]
         return detailBinding.root
     }
 
