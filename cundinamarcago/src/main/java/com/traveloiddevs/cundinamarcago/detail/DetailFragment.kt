@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.squareup.picasso.Picasso
 import com.traveloiddevs.cundinamarcago.databinding.FragmentDetailBinding
@@ -48,6 +49,11 @@ class DetailFragment : Fragment() {
             //Para variables numericas
             //weatherTextView.text = touristPlace.weather.toString()
             Picasso.get().load(touristPlace.urlPicture).into(pictureImageView)
+
+            mapButton.setOnClickListener{
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+            }
+
         }
     }
 

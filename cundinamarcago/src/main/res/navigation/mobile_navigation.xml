@@ -25,9 +25,17 @@
         <argument
             android:name="touristPlace"
             app:argType="com.traveloiddevs.cundinamarcago.model.TouristPlaceItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_preference"
         android:name="com.traveloiddevs.cundinamarcago.preference.SettingsFragment"
         android:label="@string/title_preference" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.traveloiddevs.cundinamarcago.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
