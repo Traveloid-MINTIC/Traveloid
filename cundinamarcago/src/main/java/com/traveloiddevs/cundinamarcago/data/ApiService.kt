@@ -4,6 +4,6 @@ import com.traveloiddevs.cundinamarcago.model.TouristPlace
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("Katherine026/Explicacion/touristplaces")
+    @GET("Traveloid-MINTIC/Traveloid/touristplaces")
     suspend fun getTouristPlaces(): TouristPlace
 }
