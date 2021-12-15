@@ -23,5 +23,10 @@ data class TouristPlaceItem(
     @SerializedName("urlPicture")
     val urlPicture: String,
     @SerializedName("weather")
-    val weather: String
+    val weather: String,
+    @SerializedName("latitude")
+    val latitude: Double,
+    @SerializedName("lenght")
+    val lenght: Double
+
 ) : Serializable

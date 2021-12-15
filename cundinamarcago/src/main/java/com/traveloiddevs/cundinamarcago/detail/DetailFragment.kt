@@ -9,10 +9,17 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.squareup.picasso.Picasso
+import com.traveloiddevs.cundinamarcago.R
 import com.traveloiddevs.cundinamarcago.databinding.FragmentDetailBinding
 import com.traveloiddevs.cundinamarcago.list.ListViewModel
 import com.traveloiddevs.cundinamarcago.main.MainActivity
+import com.traveloiddevs.cundinamarcago.model.TouristPlaceItem
 
 class DetailFragment : Fragment() {
     private lateinit var detailBinding: FragmentDetailBinding
@@ -37,6 +44,9 @@ class DetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val touristPlace = args.touristPlace
 
+        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+        mapFragment?.getMapAsync(callback)
+
         with(detailBinding) {
             nameTextView.text =  touristPlace.name
             ratingTextView.text = touristPlace.ratingStart
@@ -51,10 +61,20 @@ class DetailFragment : Fragment() {
             Picasso.get().load(touristPlace.urlPicture).into(pictureImageView)
 
             mapButton.setOnClickListener{
-                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment(locationPlaces = touristPlace))
+
             }
 
         }
+    }
+    private val callback = OnMapReadyCallback { googleMap ->
+        val touristPlace = args.touristPlace
+        val pointPlace = LatLng(touristPlace.latitude,touristPlace.lenght)
+        googleMap.addMarker(
+            MarkerOptions()
+            .position(pointPlace)
+            .title("Ubicación "+ touristPlace.name))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pointPlace,15F))
     }
 
 }

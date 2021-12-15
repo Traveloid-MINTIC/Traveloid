@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -13,32 +14,24 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.traveloiddevs.cundinamarcago.R
+import com.traveloiddevs.cundinamarcago.detail.DetailFragmentArgs
 
 class MapsFragment : Fragment() {
 
-    private val callback = OnMapReadyCallback { googleMap ->
-        /**
-         * Manipulates the map once available.
-         * This callback is triggered when the map is ready to be used.
-         * This is where we can add markers or lines, add listeners or move the camera.
-         * In this case, we just add a marker near Sydney, Australia.
-         * If Google Play services is not installed on the device, the user will be prompted to
-         * install it inside the SupportMapFragment. This method will only be triggered once the
-         * user has installed Google Play services and returned to the app.
-         */
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+    private val args: MapsFragmentArgs by navArgs()
 
-    val monserrate = LatLng(4.6052786,-74.055437)
-    googleMap.addMarker(MarkerOptions()
-        .position(monserrate)
-        .title("Ubicación Monserrate")
-        .snippet("Bogotá DC"))
-    googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(monserrate,15F))
-}
+    private val callback = OnMapReadyCallback { googleMap ->
+        val touristPlace = args.locationPlaces
+        val pointPlace = LatLng(touristPlace.latitude,touristPlace.lenght)
+            googleMap.addMarker(MarkerOptions()
+                .position(pointPlace)
+                .title("Ubicación "+ touristPlace.name)
+                .snippet(touristPlace.location))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pointPlace,15F))
+    }
 
     override fun onCreateView(
+
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -50,6 +43,7 @@ class MapsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
+
 
     }
 }

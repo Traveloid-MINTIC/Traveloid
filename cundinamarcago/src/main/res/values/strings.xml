@@ -43,4 +43,11 @@
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Correo Electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="repeat_password">Repita Contraseña</string>
+    <string name="user_register">Registrar Cuenta</string>
+    <string name="user_name">Nombre del Usuario</string>
+    <string name="without_count"><u>No tienes cuenta.Registrarse</u></string>
 </resources>

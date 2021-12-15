@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1013310934546",
+    "project_id": "traveloid-1cd0f",
+    "storage_bucket": "traveloid-1cd0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013310934546:android:e707ac454c006c1691d2cb",
+        "android_client_info": {
+          "package_name": "com.traveloiddevs.cundinamarcago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013310934546-c9bvlbf07p6e77tpgqji8l9fdp0rg5mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.traveloiddevs.cundinamarcago",
+            "certificate_hash": "6ec70698588d716d4b6d08c88fc1928a30d13b8f"
+          }
+        },
+        {
+          "client_id": "1013310934546-lednvus36j4dorepo9t3scfe2tl80mpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZRjZ_NwvrhoHlb09bEKWdBw9IBOX1oNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013310934546-lednvus36j4dorepo9t3scfe2tl80mpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,8 +9,8 @@
             "descriptionCard": "El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá reconocido por la fe de su Santuario, sus jardines y fuentes, su gastronomía, sus bosques de niebla, sus atardeceres, y noches estrelladas.",
             "history": "Hacia el año 1620 la Familia Fernández Valenzuela construyó las primeras ermitas en el cerro. Fué Pedro Fernández quién edificó la capilla en homenaje a la Santa Cruz de Monserrate. El Santuario del Señor Caído de Monserrate con un estilo neolítico fue diseñado  por Arturo Jaramillo y terminado alrededor del año 1925",
             "restaurants": "Restaurante Casa San Isidro y Restaurante Casa Santa Clara",
-            "latitude": "4.6056728",
-            "length": "-74.0555255",
+            "latitude": 4.6056728,
+            "length": -74.0555255,
             "location": "Bogotá,Cundinamarca",
             "urlPicture": "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/b5/57.jpg"
         },
@@ -24,8 +24,8 @@
             "history": "El parque fue inagurado por el piloto colombiano Jaime Duque Grisales el 27 de febrero de 1983, con el objetivo de crear un espacio cultural y recreativo para todas las famlilias y cuyas ganancias se destinaron a ayudar entidades sin animo de lucro.",
             "restaurants": "Restaurante Bocatipicos, Restaurante Barbacoa campestre y Restaurante la Brasa.",
             "location": " Tocancipá, Cundinamarca",
-            "latitude": "4.946866",
-            "length": "-73.9606888",
+            "latitude": 4.946866,
+            "length": -73.9606888,
             "urlPicture": "https://blog.redbus.co/wp-content/uploads/2018/04/jaime-duque-2.png"
         },
         {
@@ -38,8 +38,8 @@
             "history": "La catedral de sal se crea en 1930, gracias a los mineros de una mina de sal que la contruyeron para poder mantener viva su fe, sin embargo se cerro en 1992 para construir una mejor que se inaguro en 1995, la cual cuenta con mayor seguridad y mayor tamaño (para su construccion se extrajeron 250.000 toneladas de sal).",
             "restaurants": "Restaurante Parolaccia, Restaurante La Buena Mar - Pescaderia y Restaurante Triada.",
             "location": "Zipaquira, Cundinamarca",
-            "latitude": "5.0187",
-            "length": "-74.0099171",
+            "latitude": 5.0187,
+            "length": -74.0099171,
             "urlPicture": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2000,h_1200/https://vagabundler.com/wp-content/uploads/2019/08/P1100032-Copy-2000x1200.jpg"
         },
         {
@@ -52,8 +52,8 @@
             "history": "La laguna de Guatavita exite desde antes de la conquista de los españoles, donde era uno de los lugares mas sagrados para los Muiscas, ya que cuenta la leyenda que se adoraba a una princesa Muisca que descendio a las profundidades de la laguna debido a la muerte de su amante, causada por su esposo un gran casique de los Guatavitas, y que en las noches de luna llena salia de las profundidades para pasear sobre sus aguas.",
             "restaurants": "Restaurante La Cava Guatava, Restaurante ¡Epa Pues! Gourmet y Restaurante Mirador Los Monolitos.",
             "location": "Sesquilé, Cundinamarca",
-            "latitude": "4.9775963",
-            "length": "-73.774997",
+            "latitude": 4.9775963,
+            "length": -73.774997,
             "urlPicture": "https://www.eltiempo.com/files/image_640_428/uploads/2018/08/03/5b650e5276c97.jpeg"
         },
         {
@@ -65,8 +65,8 @@
             "descriptionCard": "A pocos minutos del centro de Tocancipa se Encuentra la Iglesia de Nuestra Señora de Fatima de la comunidad de los caballeros de la virgen, la cual tiene un estilo gotico policromado, llena de luz y color para la alabanza de Dios y la Santisima Virgen Maria.",
             "history": "La Iglesia Nuestra Señora de fatima fue terminada de construir el 8 de agosto de 2015 por la comunidad de los caballeros de la virgen, originaria de Brasil en cabeza de monseñor João Scognamiglio Clá Dias quien tambien trabajo en su diseño y dirigio la obra desde Brasil.",
             "restaurants": "Restaurante Parrilla Real, Restaurante The Green House y Restaurante El Refugio.",
-            "latitude": "4.9782234",
-            "length": "-73.9201249",
+            "latitude": 4.9782234,
+            "length": -73.9201249,
             "location": "Tocancipá, Cundinamarca",
             "urlPicture": "https://s3.amazonaws.com/images-gaudiumpress-es/wp-content/uploads/2020/08/31151105/165533.jpg"
         },
@@ -79,8 +79,8 @@
             "descriptionCard": "A pocos minutos del centro de chia se encuentra este hermoso lugar con el que puedes compartir con familia y amigos",
             "history": "El Castillo fue diseñado por el arquitecto Gastón Lelarge en 1898. Finalizó su construcción en 1901.",
             "restaurants": "Restaurante andres carne de res, Restaurante el humero",
-            "latitude": "4.8625467",
-            "length": "-74.0261457",
+            "latitude": 4.8625467,
+            "length": -74.0261457,
             "location": "Chía, Cundinamarca",
             "urlPicture": "https://castillomarroquindotcom.files.wordpress.com/2018/06/cropped-castillo-frontal-2.jpg"
         }
