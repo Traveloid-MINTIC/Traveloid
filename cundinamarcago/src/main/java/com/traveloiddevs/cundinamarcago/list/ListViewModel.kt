@@ -22,7 +22,7 @@ class ListViewModel : ViewModel() {
     @DelicateCoroutinesApi
     fun getTouristplacesFromServer(){
         GlobalScope.launch ( Dispatchers.IO ) {
-            touristPlacesLoad.value = repository.getTouristPlaces()
+            touristPlacesLoad.postValue(repository.getTouristPlaces())
         }
     }
 

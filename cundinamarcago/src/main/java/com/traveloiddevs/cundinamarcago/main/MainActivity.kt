@@ -8,6 +8,10 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.findNavController
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.traveloiddevs.cundinamarcago.R
 import com.traveloiddevs.cundinamarcago.preference.SettingsFragment
 
@@ -39,9 +43,13 @@ class MainActivity : AppCompatActivity() {
                 onBackPressed()
                 true
             }
-            else -> {
-                return true
+            R.id.menu_sign_out ->{
+                var auth: FirebaseAuth = Firebase.auth
+                auth.signOut()
+                //findNavController().navigate(R.id.loginFragment)
+                true
             }
+            else -> { return true }
         }
     }
     fun showIcon(){

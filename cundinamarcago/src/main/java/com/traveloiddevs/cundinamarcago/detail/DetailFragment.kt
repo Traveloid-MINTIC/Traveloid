@@ -69,7 +69,7 @@ class DetailFragment : Fragment() {
     }
     private val callback = OnMapReadyCallback { googleMap ->
         val touristPlace = args.touristPlace
-        val pointPlace = LatLng(touristPlace.latitude,touristPlace.lenght)
+        val pointPlace = LatLng(touristPlace.latitude,touristPlace.longitude)
         googleMap.addMarker(
             MarkerOptions()
             .position(pointPlace)

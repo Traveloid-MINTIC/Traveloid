@@ -50,11 +50,7 @@ class ListFragment : Fragment() {
         result?.let{ touristPlacesList ->
             touristPlacesAdapter.appendItems(touristPlacesList)
 
-            /* TODO Revisar Feedback (No funciono aún)
-            this.touristPlacesList = touristPlacesList
-            touristPlacesAdapter.notifyDataSetChanged()
 
-             */
         }
     }
 
